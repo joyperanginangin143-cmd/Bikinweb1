@@ -1,20 +1,10 @@
-/* =========================================
-   STYLE.CSS - Stylesheet Utama
-   Website Pedagang Ikan - Pasar Segar
-   ========================================= */
-
-/* === IMPORT FONT === */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lato:wght@400;700&display=swap');
-
 /* === VARIABEL WARNA === */
 :root {
-  --biru-tua: #0d3b6e;
+  --biru-tua: #114b8c;
   --biru-muda: #1a73c1;
   --biru-cerah: #4fc3f7;
   --putih: #ffffff;
-  --abu-muda: #f4f7fb;
   --abu-teks: #555555;
-  --hitam: #1a1a2e;
   --kuning: #f7b731;
   --bayangan: 0 4px 16px rgba(13, 59, 110, 0.12);
 }
@@ -23,47 +13,39 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
-  font-family: 'Lato', sans-serif;
-  background-color: var(--abu-muda);
-  color: var(--hitam);
-  line-height: 1.7;
+  font-family: sans-serif;
+  background-color: #f3eaea;
 }
 
-h1, h2, h3, h4 {
-  font-family: 'Poppins', sans-serif;
+h1,
+h2,
+h3,
+h4 {
+  font-family: sans-serif;
   color: var(--biru-tua);
 }
 
 a {
   text-decoration: none;
-  color: inherit;
-}
-
-img {
-  max-width: 100%;
-  display: block;
 }
 
 /* === NAVBAR === */
 .navbar {
   background-color: var(--biru-tua);
-  padding: 0 40px;
+  padding: 0 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 65px;
   position: sticky;
-  top: 0;
-  z-index: 100;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .navbar .logo {
-  font-family: 'Poppins', sans-serif;
+  font-family: sans-serif;
   font-size: 1.3rem;
   font-weight: 700;
   color: var(--putih);
@@ -97,25 +79,11 @@ img {
   color: var(--putih);
 }
 
-/* === FOOTER === */
-footer {
-  background-color: var(--biru-tua);
-  color: #cde8ff;
-  text-align: center;
-  padding: 22px 20px;
-  font-size: 0.9rem;
-  margin-top: 60px;
-}
 
-footer span {
-  color: var(--kuning);
-  font-weight: 700;
-}
 
 /* === HERO SECTION (HOME) === */
 .hero {
-  background: linear-gradient(135deg, var(--biru-tua) 0%, var(--biru-muda) 100%);
-  color: var(--putih);
+  background: linear-gradient(135deg, var(--biru-tua) 1%, var(--biru-muda) 30%);
   padding: 80px 40px;
   text-align: center;
 }
@@ -144,21 +112,22 @@ footer span {
   padding: 12px 30px;
   border-radius: 30px;
   font-weight: 700;
-  font-family: 'Poppins', sans-serif;
+  font-family: sans-serif;
   font-size: 1rem;
   transition: transform 0.2s, box-shadow 0.2s;
-  box-shadow: 0 4px 12px rgba(247,183,49,0.4);
+  box-shadow: 0 4px 12px rgba(247, 183, 49, 0.4);
 }
 
 .hero .tombol:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(247,183,49,0.5);
+  box-shadow: 0 8px 20px rgba(247, 183, 49, 0.5);
 }
 
 /* === SECTION JUDUL === */
 .section-judul {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  
 }
 
 .section-judul h2 {
@@ -172,8 +141,8 @@ footer span {
 }
 
 .garis-bawah {
-  width: 60px;
-  height: 4px;
+  width: 70%;
+  height: 5px;
   background: var(--biru-muda);
   margin: 10px auto 0;
   border-radius: 2px;
@@ -184,6 +153,9 @@ footer span {
   padding: 60px 40px;
   max-width: 1100px;
   margin: 0 auto;
+  background: linear-gradient(135deg,  0%, white 40%);
+  padding: 80px 40px;
+  text-align: center;
 }
 
 .kartu-grid {
@@ -191,6 +163,7 @@ footer span {
   gap: 24px;
   flex-wrap: wrap;
   justify-content: center;
+  
 }
 
 .kartu {
@@ -209,7 +182,7 @@ footer span {
 
 .kartu .kartu-gambar {
   width: 100%;
-  height: 190px;
+  height: 300px;
   object-fit: cover;
 }
 
@@ -232,14 +205,15 @@ footer span {
   font-size: 1.05rem;
   color: var(--biru-muda);
   font-weight: 700;
-  font-family: 'Poppins', sans-serif;
+  font-family: sans-serif;
 }
 
 /* === PROFIL SECTION === */
 .profil-section {
   padding: 60px 40px;
-  max-width: 900px;
+  max-width: 950px;
   margin: 0 auto;
+  
 }
 
 .profil-kotak {
@@ -254,12 +228,13 @@ footer span {
 }
 
 .profil-foto {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  border-radius: 20%;
   object-fit: cover;
   border: 5px solid var(--biru-cerah);
-  flex-shrink: 0;
+  margin: 0 auto 20px;
+
 }
 
 .profil-info h2 {
@@ -267,17 +242,6 @@ footer span {
   margin-bottom: 6px;
 }
 
-.profil-info .jabatan {
-  color: var(--biru-muda);
-  font-weight: 700;
-  margin-bottom: 14px;
-  font-size: 1rem;
-}
-
-.profil-info p {
-  color: var(--abu-teks);
-  margin-bottom: 20px;
-}
 
 .profil-info table {
   border-collapse: collapse;
@@ -296,6 +260,9 @@ footer span {
   color: var(--biru-tua);
   width: 40%;
 }
+.no_hp a{
+  color: black;
+}
 
 /* === GALERI === */
 .galeri-section {
@@ -307,25 +274,28 @@ footer span {
 .galeri-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
+  gap: 20px;
+  
+  
 }
 
 .galeri-item {
   border-radius: 12px;
   overflow: hidden;
   box-shadow: var(--bayangan);
-  position: relative;
+  
 }
 
 .galeri-item img {
   width: 100%;
-  height: 210px;
+  height: 400px;
   object-fit: cover;
   transition: transform 0.3s;
 }
 
+
 .galeri-item:hover img {
-  transform: scale(1.06);
+  transform: scale(1.03);
 }
 
 .galeri-label {
@@ -335,7 +305,7 @@ footer span {
   padding: 10px;
   font-size: 0.9rem;
   font-weight: 700;
-  font-family: 'Poppins', sans-serif;
+  font-family: sans-serif;
 }
 
 /* === FORM PEMESANAN === */
@@ -428,22 +398,15 @@ footer span {
 .pembuat-foto {
   width: 140px;
   height: 140px;
-  border-radius: 50%;
+  border-radius: 100%;
   object-fit: cover;
   border: 4px solid var(--biru-cerah);
   margin: 0 auto 20px;
 }
 
 .pembuat-kotak h2 {
-  font-size: 1.6rem;
+  font-size: 2rem;
   margin-bottom: 4px;
-}
-
-.pembuat-kotak .nim {
-  color: var(--biru-muda);
-  font-weight: 700;
-  font-size: 1rem;
-  margin-bottom: 16px;
 }
 
 .pembuat-kotak p {
@@ -452,71 +415,12 @@ footer span {
   margin: 0 auto 24px;
 }
 
-.badge-grid {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin-top: 16px;
+.pembuat-kotak p {
+  color: var(--abu-teks);
+  max-width: 480px;
+  margin: 0 auto 24px;
 }
 
-.badge {
-  background: var(--abu-muda);
-  border: 2px solid #dde8f5;
-  border-radius: 30px;
-  padding: 7px 18px;
-  font-size: 0.87rem;
-  font-weight: 700;
-  color: var(--biru-tua);
-  font-family: 'Poppins', sans-serif;
-}
 
-.badge.biru {
-  background: var(--biru-tua);
-  color: var(--putih);
-  border-color: var(--biru-tua);
-}
 
-/* === RESPONSIF SEDERHANA === */
-@media (max-width: 768px) {
-  .navbar {
-    padding: 0 16px;
-    flex-direction: column;
-    height: auto;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    gap: 10px;
-  }
 
-  .navbar ul {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 4px;
-  }
-
-  .hero {
-    padding: 50px 20px;
-  }
-
-  .hero h1 {
-    font-size: 1.8rem;
-  }
-
-  .produk-section,
-  .profil-section,
-  .galeri-section,
-  .form-section,
-  .pembuat-section {
-    padding: 40px 16px;
-  }
-
-  .galeri-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .profil-kotak {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-}
