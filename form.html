@@ -1,0 +1,126 @@
+<html>
+<head>
+  <title>Toko Ikan Segar | Form Pemesanan</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/jpg" href="lembartulis.jpg">
+  
+</head>
+<body>
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="logo">🐟 <span>Seller</span>Fish</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="profil.html">Profil Mitra</a></li>
+      <li><a href="galeri.html">Galeri</a></li>
+      <li><a href="form.html" class="aktif">Pemesanan</a></li>
+      <li><a href="pembuat.html">Pembuat</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== FORM ===== -->
+  <section class="form-section">
+    <div class="section-judul">
+      <h2>Form Pemesanan Ikan</h2>
+      <p>Isi data di bawah ini untuk memesan ikan yang Anda inginkan</p>
+      <p> Untuk mengambil ikannya, silahkan ambil di tempat jualan SellerFish</p>
+      <p> Pasar Kampung Lalang Medan</p>
+      <div class="garis-bawah"></div>
+    </div>
+
+    <div class="form-kotak">
+      <form action="#" method="post">
+
+        <!-- Nama Pembeli -->
+        <div class="form-group">
+          <label for="nama"> Nama Lengkap </label>
+          <input
+            type="text"
+            id="nama"
+            name="nama"
+            placeholder="Contoh: Budi Santoso"
+            required
+          />
+        </div>
+
+        <!-- Nomor HP -->
+        <div class="form-group">
+          <label for="hp"> Nomor HP / WhatsApp</label>
+          <input
+            type="tel"
+            id="hp"
+            name="hp"
+            placeholder="Contoh: 0812-3456-7890"
+            required
+          />
+        </div>
+
+        <!-- Alamat -->
+        <div class="form-group">
+          <label for="alamat"> Alamat Pengiriman</label>
+          <input
+            type="text"
+            id="alamat"
+            name="alamat"
+            placeholder="Masukkan alamat lengkap Anda"
+            required
+          />
+        </div>
+
+        <!-- Jenis Ikan -->
+        <div class="form-group">
+          <label for="ikan"> Jenis Ikan</label>
+          <select id="ikan" name="ikan" required>
+            <option value="">-- Pilih Jenis Ikan --</option>
+            <option value="ikan_mas">Ikan Mas (Rp 39.000/kg)</option>
+            <option value="ikan_nila">Ikan Nila (Rp 35.000/kg)</option>
+            <option value="ikan_toba">Ikan Toba (Rp 60.000/kg)</option>
+          </select>
+        </div>
+
+        <!-- Berat -->
+        <div class="form-group">
+          <label for="berat"> Berat Pesanan (kg)</label>
+          <input
+            type="number"
+            id="berat"
+            name="berat"
+            placeholder="Contoh: 2"
+            min="1"
+            required
+          />
+        </div>
+
+        <!-- Tanggal Pengiriman -->
+        <div class="form-group">
+          <label for="tanggal"> Tanggal Pengiriman</label>
+          <input
+            type="date"
+            id="tanggal"
+            name="tanggal"
+            required
+          />
+        </div>
+
+        <!-- Catatan -->
+        <div class="form-group">
+          <label for="catatan"> Catatan Tambahan</label>
+          <textarea
+            id="catatan"
+            name="catatan"
+            placeholder="Misalnya: tolong dibersihkan sisiknya, atau ikan hidup saja..."
+          ></textarea>
+        </div>
+
+        <!-- Tombol Submit -->
+        <button type="submit" class="tombol-kirim">
+           Kirim Pesanan
+        </button>
+
+      </form>
+    </div>
+  </section>
+
+ 
+</body>
+</html>
